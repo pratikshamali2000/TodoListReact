@@ -1,0 +1,53 @@
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 50px;
+}
+
+.add-block-btn {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.block {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.block img {
+    max-width: 100%;
+    height: auto;
+}
+
+.block div[contentEditable] {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.drag-handle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    font-size: 12px;
+    cursor: grab;
+    display: none;
+}
+
+.block:hover .drag-handle {
+    display: block;
+}
+
+.edit-options {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+}
